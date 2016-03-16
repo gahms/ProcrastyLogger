@@ -5,16 +5,18 @@
 @property (nonatomic, strong) NSMutableDictionary * loggersByName;
 @end
 
-static PLoggerStore * instance = nil;
-
 @implementation PLoggerStore
 @synthesize loggersByName = _loggersByName;
 
 + (PLoggerStore *)getInstance
 {
-    if(instance == nil) {
+    static dispatch_once_t onceToken;
+    static PLoggerStore * instance = nil;
+
+    dispatch_once (&onceToken, ^{
         instance = [[PLoggerStore alloc] init];
-    }
+    });
+
     return instance;
 }
 
