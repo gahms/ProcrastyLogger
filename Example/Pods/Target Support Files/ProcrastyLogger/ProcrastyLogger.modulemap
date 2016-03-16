@@ -1,0 +1,6 @@
+framework module ProcrastyLogger {
+  umbrella header "ProcrastyLogger-umbrella.h"
+
+  export *
+  module * { export * }
+}

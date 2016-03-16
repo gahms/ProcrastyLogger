@@ -3,8 +3,6 @@
 
 #define kPrefKeyCurrentIndex @"PLoggerRollingFileAppender.currentIndex"
 
-#define kProcrastyCalContainer @"group.com.procrasty.cal"
-
 @interface PLoggerRollingFileAppender ()
 @property (nonatomic) dispatch_queue_t appenderQueue;
 @property (nonatomic, assign) NSInteger currentIndex;
@@ -129,11 +127,13 @@
 + (NSString *)logFilesDir
 {
     NSString * container
+    = [self applicationCachesDirectory];
+    /*
     = [[NSFileManager defaultManager]
-       containerURLForSecurityApplicationGroupIdentifier:kProcrastyCalContainer]
+       containerURLForSecurityApplicationGroupIdentifier:@"group.com.companyname.appgroup"]
     .path;
-
-    // [self applicationCachesDirectory]
+    */
+    
     NSString * dir
     = [container
        stringByAppendingPathComponent:@"log"];

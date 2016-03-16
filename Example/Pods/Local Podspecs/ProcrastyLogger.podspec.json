@@ -1,0 +1,30 @@
+{
+  "name": "ProcrastyLogger",
+  "version": "0.1.0",
+  "summary": "Fast and simple logging for iOS.",
+  "description": "Fast and simple logging for iOS. ProcrastyLogger offers fast and easy logging\nto the console or to a set of rolling files. Log levels can be configured and\nchanged without recompiling. Disabled logs are very fast.",
+  "homepage": "https://github.com/gahms/ProcrastyLogger",
+  "license": "MIT",
+  "authors": {
+    "Nicolai Henriksen": "nicolai@procrasty.com"
+  },
+  "source": {
+    "git": "https://github.com/gahms/ProcrastyLogger.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "PLog/**/*",
+  "resource_bundles": {
+    "ProcrastyLogger": [
+      "PLog/*.png"
+    ]
+  },
+  "dependencies": {
+    "ZipArchive": [
+      "~> 1.4"
+    ]
+  }
+}

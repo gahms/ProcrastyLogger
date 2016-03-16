@@ -1,6 +1,4 @@
 #import <ZipArchive/ZipArchive.h>
-#import <AFNetworking/AFNetworking.h>
-#import <MBProgressHUD/MBProgressHUD.h>
 
 #import "PLoggerZipHandler.h"
 
@@ -129,72 +127,6 @@ static PLogger * logger = nil;
     }
 
     return filename;
-}
-
-- (void)uploadLogsFrom:(UIView *)presentingView
-{
-    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:presentingView animated:YES];
-    hud.mode = MBProgressHUDModeDeterminateHorizontalBar;
-    hud.labelText = @"Uploading...";
-    hud.dimBackground = YES;
-    hud.minShowTime = 1.0;
-
-    NSString * zipFile = [self makeLogsZip];
-    NSData * zipData = [[NSFileManager defaultManager] contentsAtPath:zipFile];
-
-    // 1. Create AFHTTPRequestSerializer which will create your request.
-    AFHTTPRequestSerializer *serializer = [AFHTTPRequestSerializer serializer];
-
-    // 2. Create an NSMutableURLRequest.
-    NSError * error = nil;
-    NSMutableURLRequest *request =
-    [serializer
-     multipartFormRequestWithMethod:@"POST"
-     URLString:@"https://sevilla.procrasty.com/upload.php"
-     parameters:nil
-     constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
-         [formData
-          appendPartWithFileData:zipData
-          name:@"fileToUpload"
-          fileName:[zipFile lastPathComponent]
-          mimeType:@"application/zip"];
-     }
-     error:&error];
-    if(request == nil) {
-        plogError(@"%@", error);
-        return;
-    }
-
-    // 3. Create and use AFHTTPRequestOperationManager to create an AFHTTPRequestOperation from the NSMutableURLRequest that we just created.
-    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    manager.securityPolicy.allowInvalidCertificates=YES;
-
-    AFHTTPRequestOperation *operation =
-    [manager
-     HTTPRequestOperationWithRequest:request
-     success:^(AFHTTPRequestOperation *operation, id responseObject) {
-         plogInfo(@"Success: %@", responseObject);
-         [hud hide:YES];
-     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-         plogError(@"Failure: %@", error);
-         [hud hide:YES];
-     }];
-
-    // 4. Set the progress block of the operation.
-    [operation
-     setUploadProgressBlock:^(NSUInteger bytesWritten,
-                              long long totalBytesWritten,
-                              long long totalBytesExpectedToWrite) {
-         double pct = totalBytesWritten/totalBytesExpectedToWrite;
-
-         plogInfo(@"Wrote %@ %% (%@/%@)",
-                  @(pct*100),
-                  @(totalBytesWritten), @(totalBytesExpectedToWrite));
-         hud.progress = pct;
-     }];
-
-    // 5. Begin!
-    [operation start];
 }
 
 + (NSString *)applicationCachesDirectory

@@ -1,0 +1,1082 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09E9C2A8C4AA21DE6D20A959F86E3B2F /* PLoggerRollingFileAppender.m in Sources */ = {isa = PBXBuildFile; fileRef = BA69C0A69C5F17389ACBE96BFAC0E9D0 /* PLoggerRollingFileAppender.m */; };
+		1DD51300B5F96B422A297F0C2EA76B66 /* ZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = DE5C5D63550EE833580D693810B80768 /* ZipArchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F2CEB30BF4568ABE985A991AA9F8D69 /* ZipArchive-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 49BAFFBAD9E45BE4A73C11DC4E85DAE7 /* ZipArchive-dummy.m */; };
+		33C7A08D2F80D294DB0CB6623B249949 /* PLoggerStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AA2C0D8894693BAEACCD37BC3C9886E /* PLoggerStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3683425AB10D72F55E502364796E9060 /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D0AD4E4DB5564D008D671C67579104A /* ioapi.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		52C87DE5D0B78FD9D7ACFC3782F76162 /* PLoggerDefaultAppender.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DFC57B042AA6C15F88C0B4F3649557 /* PLoggerDefaultAppender.m */; };
+		53152174B184895BF3362C909868C923 /* PLoggerConfigurator.h in Headers */ = {isa = PBXBuildFile; fileRef = B6E10A2FAE2CB1EFAB3B25817B2ED72F /* PLoggerConfigurator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		555009DC710FE4E12C2605D8772D2406 /* PLoggerFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 81476797A520A931FAA1D041AEBF3CDE /* PLoggerFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		57CF45271059E8EB26239D304E99DBDD /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = D6A1E5DDA0FFD72E005769B0054A4807 /* unzip.c */; settings = {COMPILER_FLAGS = "-Dunix -fno-objc-arc"; }; };
+		5DD32DF064247A1C26B97EA57DB66D4E /* PLoggerRollingFileAppender.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B8F9C10199CB6029A6CB6A55A387DB7 /* PLoggerRollingFileAppender.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66A859ACC29A4F21787E7E55F4839861 /* PLoggerLine.m in Sources */ = {isa = PBXBuildFile; fileRef = F17CC5241EE1341D1B708D6DED2AFDF8 /* PLoggerLine.m */; };
+		705C25F1000B5E8B2ADD5B3C1C5F73BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 267D187697C913F1BF5C91DAA076024A /* Foundation.framework */; };
+		796C97F5400C35CCC79F19109347253E /* PLoggerDefaultAppender.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F2B5BD2DEB0C087378B25A779115034 /* PLoggerDefaultAppender.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79985AA46F229F3380F51A826808BBAE /* ZipArchive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB430AEC0EC4B356F6639867D58DD53F /* ZipArchive.framework */; };
+		822E3127CBD192B60E7C698ADD434648 /* plog.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF469D77495E9D7FAC7117DF87D450F /* plog.m */; };
+		8607C86A8E4E025BA50EBD1C2B719BBF /* ProcrastyLogger.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8D3F8BD97468C86D97F27BBF4A76C8BA /* ProcrastyLogger.bundle */; };
+		86D9322A23F48BFF606C97672E042A3D /* PLoggerLine.h in Headers */ = {isa = PBXBuildFile; fileRef = 004B96C47363445C42B5D3DEBA427935 /* PLoggerLine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		871FA9785FEAD4843D8D6147BD3ADC59 /* plog.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C6971C744CDA32B3C353FA2888043B3 /* plog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8CCBF735D7AC2C4C32C61BA5577B603C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 267D187697C913F1BF5C91DAA076024A /* Foundation.framework */; };
+		8CF95A9A9D31CF0C2A9134A8407FDE14 /* PLoggerZipHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A38C9DF58BA63C44DF70DF038CAA24BE /* PLoggerZipHandler.m */; };
+		91B643882FA988B4921047AFE9D41E58 /* Pods-ProcrastyLogger_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 78871FC850CF9139D0CCCA31DA30F695 /* Pods-ProcrastyLogger_Tests-dummy.m */; };
+		92917F8CD3B51CE5044BFBD8484B0F58 /* ZipArchive-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C0084A7D00C130F5D8FC4D6B06C54F67 /* ZipArchive-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9520C45994E5D1C3D5DCDA72CA044AEE /* Pods-ProcrastyLogger_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B03FC4439DDBF4359A24DEF4F46347B0 /* Pods-ProcrastyLogger_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		967AB85241A24488818AEE3475748F8E /* Pods-ProcrastyLogger_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 90501047156F87C93255C93A1A0E51C5 /* Pods-ProcrastyLogger_Example-dummy.m */; };
+		98411C7C6831F78898CC891AAEB040CE /* ZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 8927EC890454FC91F0AA54C81874C7B5 /* ZipArchive.m */; settings = {COMPILER_FLAGS = "-Dunix -fno-objc-arc"; }; };
+		986C0590757FBF44CC9C68FAEE23E85F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 267D187697C913F1BF5C91DAA076024A /* Foundation.framework */; };
+		9D35D77A9E073FC3B18ECA50CC7B265D /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 23F7C6DDF6256EEC1CCD3AC4819D760A /* ioapi.c */; settings = {COMPILER_FLAGS = "-Dunix -fno-objc-arc"; }; };
+		9E6B6A7410F779DBA2708A8CD6DD8139 /* mztools.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D5FD78A91D7981E85EF8E2E703E96D3 /* mztools.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9FDE6367D053397CE08E91FD2D10957A /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 32BF10FB71DDEECEA4F5C559C3AF140F /* mztools.c */; settings = {COMPILER_FLAGS = "-Dunix -fno-objc-arc"; }; };
+		A37CCD6DCD7CDA465C32EABA3BEA47CA /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = 84F6945951936DAA3B0E81E0F49CE9BC /* unzip.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A737FEE96E3FA230EC59C19D18E3A129 /* PLoggerDefaultFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 65881781532946B381BA27B052381F36 /* PLoggerDefaultFormatter.m */; };
+		A865ED6145760C2802528A31CCB61113 /* PLoggerDefaultFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 78DD5BB2D4FE581ED0276899E4F4BDDB /* PLoggerDefaultFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AADC46CFFD9BFA94F0D8A8D133399D6C /* PLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B8B3E51DF24621093F6D9646A0C2189 /* PLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9F000A42DC8D302569319B4E45C495B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 267D187697C913F1BF5C91DAA076024A /* Foundation.framework */; };
+		BD2EDE5EB483D08B3B86BA62A9643B11 /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 932473E2CEA2F1135CC5ED0A94732958 /* crypt.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BE7A4561FB211AE77AC9D5DCC388E1B3 /* ProcrastyLogger-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD2ED1E7F1F813D5089E22617302C9A /* ProcrastyLogger-dummy.m */; };
+		CC0B556D7E8E2DBD3BD6421CAE1AA322 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = EE682BC20C5A77EE24563C1D707E0B92 /* zip.c */; settings = {COMPILER_FLAGS = "-Dunix -fno-objc-arc"; }; };
+		CFE63FF3E7940BA8F6DDF28C58D4A1FE /* PLoggerConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = B25AA6EE8DF586FC5D8274D1624AD5FE /* PLoggerConfigurator.m */; };
+		DDA96530D32B76FBA18927413429F79A /* Pods-ProcrastyLogger_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DD2720FFF480962102572B1ECC09E80 /* Pods-ProcrastyLogger_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E1F5A8C744BC526F573CCE61B7C7D06F /* PLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 585B31362DA99859B7A03BAB7C09506D /* PLogger.m */; };
+		F99161D835A104187185E189B384FFB8 /* ProcrastyLogger-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E2F13F57D9C8B277D8234C572885451 /* ProcrastyLogger-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAB6C16A9D5DCFE91A9E19C98C6F19E1 /* PLoggerAppender.h in Headers */ = {isa = PBXBuildFile; fileRef = 00DB119CBC48C32A7CB92A974A7AE036 /* PLoggerAppender.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB56A0D2B34CE7B4E0ED17691E1FF615 /* PLoggerZipHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F76D94085B83C8AE6ABAB30EB8ED5CF /* PLoggerZipHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FF3B41C85EC0D060D63D087BE652376D /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 80F8D23231FD652E9BCCE3A3A31BC088 /* zip.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FFE4E0C332D4409EF25ABDDC43B0BC94 /* PLoggerStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 681980B98E5CE902BBFBA3D0129805E1 /* PLoggerStore.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		08940E099AF3C0767E750434D67EC33F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 208A731FE608CC1FD763E31C977264FF;
+			remoteInfo = ZipArchive;
+		};
+		147544180CB8CAAF1E5CAC7090CFD94E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7F14030A209CD15F4153DAAF2B131D9;
+			remoteInfo = ProcrastyLogger;
+		};
+		3CC677B161E35F2E3CC8D76B441D289A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 208A731FE608CC1FD763E31C977264FF;
+			remoteInfo = ZipArchive;
+		};
+		717D16A36F6E2646254528E058251353 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DF911F1FDFECB63699455014AA799FF;
+			remoteInfo = "ProcrastyLogger-ProcrastyLogger";
+		};
+		F13F2B6A6F31238AD1463060EA32CD8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 208A731FE608CC1FD763E31C977264FF;
+			remoteInfo = ZipArchive;
+		};
+		FBC8200A52FEA505265734217EBFDE85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7F14030A209CD15F4153DAAF2B131D9;
+			remoteInfo = ProcrastyLogger;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		004B96C47363445C42B5D3DEBA427935 /* PLoggerLine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PLoggerLine.h; sourceTree = "<group>"; };
+		00CACFAA3304179331893C79F4FF9A5C /* Pods-ProcrastyLogger_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ProcrastyLogger_Tests.modulemap"; sourceTree = "<group>"; };
+		00DB119CBC48C32A7CB92A974A7AE036 /* PLoggerAppender.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PLoggerAppender.h; sourceTree = "<group>"; };
+		0185C21799D5FF50B9B4974F2BE3F6FD /* Pods-ProcrastyLogger_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ProcrastyLogger_Tests-resources.sh"; sourceTree = "<group>"; };
+		0731481257BE2209238CF70809AE5070 /* Pods-ProcrastyLogger_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ProcrastyLogger_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		0B8F9C10199CB6029A6CB6A55A387DB7 /* PLoggerRollingFileAppender.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PLoggerRollingFileAppender.h; sourceTree = "<group>"; };
+		0C27E9749F2C72F65E204274772A6B84 /* ProcrastyLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ProcrastyLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E3026391CBADD9927E9B63C6ED8CE19 /* ZipArchive-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZipArchive-prefix.pch"; sourceTree = "<group>"; };
+		1FC479059BC86D7162625CE95BC7D4D7 /* Pods_ProcrastyLogger_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProcrastyLogger_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23F7C6DDF6256EEC1CCD3AC4819D760A /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = ioapi.c; path = minizip/ioapi.c; sourceTree = "<group>"; };
+		267D187697C913F1BF5C91DAA076024A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		292560D0D3B8FD7C23617DF1ED0A306F /* ProcrastyLogger.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ProcrastyLogger.xcconfig; sourceTree = "<group>"; };
+		29A1C16ED9EEF16DD968089BDE39D18B /* Pods-ProcrastyLogger_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ProcrastyLogger_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2B8B3E51DF24621093F6D9646A0C2189 /* PLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PLogger.h; sourceTree = "<group>"; };
+		2E2F13F57D9C8B277D8234C572885451 /* ProcrastyLogger-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ProcrastyLogger-umbrella.h"; sourceTree = "<group>"; };
+		32BF10FB71DDEECEA4F5C559C3AF140F /* mztools.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = mztools.c; path = minizip/mztools.c; sourceTree = "<group>"; };
+		35F7CDE651FBF3A1992D0A3AC9DF5D84 /* ZipArchive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZipArchive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A472A3BC195FCC7FD1EFF140DF8E163 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D5FD78A91D7981E85EF8E2E703E96D3 /* mztools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mztools.h; path = minizip/mztools.h; sourceTree = "<group>"; };
+		3DD2ED1E7F1F813D5089E22617302C9A /* ProcrastyLogger-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ProcrastyLogger-dummy.m"; sourceTree = "<group>"; };
+		43ECDF0A903D4F44FB4CC55ED889A088 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49BAFFBAD9E45BE4A73C11DC4E85DAE7 /* ZipArchive-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZipArchive-dummy.m"; sourceTree = "<group>"; };
+		585B31362DA99859B7A03BAB7C09506D /* PLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PLogger.m; sourceTree = "<group>"; };
+		5AA2C0D8894693BAEACCD37BC3C9886E /* PLoggerStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PLoggerStore.h; sourceTree = "<group>"; };
+		5DF469D77495E9D7FAC7117DF87D450F /* plog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = plog.m; sourceTree = "<group>"; };
+		65881781532946B381BA27B052381F36 /* PLoggerDefaultFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PLoggerDefaultFormatter.m; sourceTree = "<group>"; };
+		681980B98E5CE902BBFBA3D0129805E1 /* PLoggerStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PLoggerStore.m; sourceTree = "<group>"; };
+		6C6971C744CDA32B3C353FA2888043B3 /* plog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = plog.h; sourceTree = "<group>"; };
+		6DD2720FFF480962102572B1ECC09E80 /* Pods-ProcrastyLogger_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ProcrastyLogger_Example-umbrella.h"; sourceTree = "<group>"; };
+		6F2B5BD2DEB0C087378B25A779115034 /* PLoggerDefaultAppender.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PLoggerDefaultAppender.h; sourceTree = "<group>"; };
+		70576DADACD2A0BE567E7F51F658A3BA /* ZipArchive.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ZipArchive.modulemap; sourceTree = "<group>"; };
+		78871FC850CF9139D0CCCA31DA30F695 /* Pods-ProcrastyLogger_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ProcrastyLogger_Tests-dummy.m"; sourceTree = "<group>"; };
+		78DD5BB2D4FE581ED0276899E4F4BDDB /* PLoggerDefaultFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PLoggerDefaultFormatter.h; sourceTree = "<group>"; };
+		7AD5675140C184DEF45CC5F3E4A1325B /* Pods-ProcrastyLogger_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ProcrastyLogger_Example.modulemap"; sourceTree = "<group>"; };
+		7C6B7CD73DA3C64C5217992E8E0FD727 /* ProcrastyLogger-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ProcrastyLogger-prefix.pch"; sourceTree = "<group>"; };
+		7EA1E252A69B7D550637515BD3AA7709 /* Pods-ProcrastyLogger_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ProcrastyLogger_Example.release.xcconfig"; sourceTree = "<group>"; };
+		7F404D00C78A6439BD57F3B99F449888 /* Pods-ProcrastyLogger_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ProcrastyLogger_Example-resources.sh"; sourceTree = "<group>"; };
+		7F76D94085B83C8AE6ABAB30EB8ED5CF /* PLoggerZipHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PLoggerZipHandler.h; sourceTree = "<group>"; };
+		80F8D23231FD652E9BCCE3A3A31BC088 /* zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zip.h; path = minizip/zip.h; sourceTree = "<group>"; };
+		81476797A520A931FAA1D041AEBF3CDE /* PLoggerFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PLoggerFormatter.h; sourceTree = "<group>"; };
+		84F6945951936DAA3B0E81E0F49CE9BC /* unzip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = unzip.h; path = minizip/unzip.h; sourceTree = "<group>"; };
+		8927EC890454FC91F0AA54C81874C7B5 /* ZipArchive.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZipArchive.m; sourceTree = "<group>"; };
+		8D3F8BD97468C86D97F27BBF4A76C8BA /* ProcrastyLogger.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProcrastyLogger.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		90501047156F87C93255C93A1A0E51C5 /* Pods-ProcrastyLogger_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ProcrastyLogger_Example-dummy.m"; sourceTree = "<group>"; };
+		932473E2CEA2F1135CC5ED0A94732958 /* crypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypt.h; path = minizip/crypt.h; sourceTree = "<group>"; };
+		99485803B205F3E131B546BB8843ED6F /* Pods-ProcrastyLogger_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ProcrastyLogger_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		9D0AD4E4DB5564D008D671C67579104A /* ioapi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = minizip/ioapi.h; sourceTree = "<group>"; };
+		A38C9DF58BA63C44DF70DF038CAA24BE /* PLoggerZipHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PLoggerZipHandler.m; sourceTree = "<group>"; };
+		A42602AC46B20007CC129578B23224A3 /* Pods-ProcrastyLogger_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ProcrastyLogger_Example-frameworks.sh"; sourceTree = "<group>"; };
+		B03FC4439DDBF4359A24DEF4F46347B0 /* Pods-ProcrastyLogger_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ProcrastyLogger_Tests-umbrella.h"; sourceTree = "<group>"; };
+		B25AA6EE8DF586FC5D8274D1624AD5FE /* PLoggerConfigurator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PLoggerConfigurator.m; sourceTree = "<group>"; };
+		B6E10A2FAE2CB1EFAB3B25817B2ED72F /* PLoggerConfigurator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PLoggerConfigurator.h; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BA69C0A69C5F17389ACBE96BFAC0E9D0 /* PLoggerRollingFileAppender.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PLoggerRollingFileAppender.m; sourceTree = "<group>"; };
+		BE50969B34B33C3E81719808B78FCC72 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0084A7D00C130F5D8FC4D6B06C54F67 /* ZipArchive-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZipArchive-umbrella.h"; sourceTree = "<group>"; };
+		C0DFC57B042AA6C15F88C0B4F3649557 /* PLoggerDefaultAppender.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PLoggerDefaultAppender.m; sourceTree = "<group>"; };
+		CAE3615F6A0B2AB84D2D6183B063C3E6 /* Pods-ProcrastyLogger_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ProcrastyLogger_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		CB430AEC0EC4B356F6639867D58DD53F /* ZipArchive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZipArchive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6A1E5DDA0FFD72E005769B0054A4807 /* unzip.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = unzip.c; path = minizip/unzip.c; sourceTree = "<group>"; };
+		DE5C5D63550EE833580D693810B80768 /* ZipArchive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
+		DF6925F0521F272C596D95A646A4A4B0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1D45CA2BDC7C01CB4F8AD8F98116F4E /* Pods_ProcrastyLogger_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProcrastyLogger_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E68A6E2E905D6D3222FFD02C667AD957 /* ProcrastyLogger.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ProcrastyLogger.modulemap; sourceTree = "<group>"; };
+		EE682BC20C5A77EE24563C1D707E0B92 /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = zip.c; path = minizip/zip.c; sourceTree = "<group>"; };
+		F0BB2A0F9A04BFD83473CF168FF62AC0 /* Pods-ProcrastyLogger_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ProcrastyLogger_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		F17CC5241EE1341D1B708D6DED2AFDF8 /* PLoggerLine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PLoggerLine.m; sourceTree = "<group>"; };
+		F3F8384E4D0547E6C1780D68D3F0293C /* Pods-ProcrastyLogger_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ProcrastyLogger_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F6141484AB5929A2631DABFF7BF9F8A6 /* Pods-ProcrastyLogger_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ProcrastyLogger_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F86ABEA303AE393E333D6A2667AFB4C4 /* Pods-ProcrastyLogger_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ProcrastyLogger_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		FD63B23A781CDEF79DDBA00F48369C2F /* ZipArchive.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZipArchive.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03009844DB636E4E1CDEBF6A972C5009 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9F000A42DC8D302569319B4E45C495B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		524750F2C671FAB02FB371F5C211E00E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				705C25F1000B5E8B2ADD5B3C1C5F73BD /* Foundation.framework in Frameworks */,
+				79985AA46F229F3380F51A826808BBAE /* ZipArchive.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		526B22DEA536F98F0827253103704794 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FF58DE426B5B1EEC28B41163D8D567F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				986C0590757FBF44CC9C68FAEE23E85F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DF2A895298B7B764BC082601C50A826 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CCBF735D7AC2C4C32C61BA5577B603C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0040585B7512B8AD9E400B3B46EA03FE /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				673A6D4DAF19B21FC22ABFF3D2631C11 /* Pods-ProcrastyLogger_Example */,
+				5DB58F74B00E1204036D8193C06AC92A /* Pods-ProcrastyLogger_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3B5390DE660B58C8C1974976E5E95612 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A472A3BC195FCC7FD1EFF140DF8E163 /* Info.plist */,
+				E68A6E2E905D6D3222FFD02C667AD957 /* ProcrastyLogger.modulemap */,
+				292560D0D3B8FD7C23617DF1ED0A306F /* ProcrastyLogger.xcconfig */,
+				3DD2ED1E7F1F813D5089E22617302C9A /* ProcrastyLogger-dummy.m */,
+				7C6B7CD73DA3C64C5217992E8E0FD727 /* ProcrastyLogger-prefix.pch */,
+				2E2F13F57D9C8B277D8234C572885451 /* ProcrastyLogger-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ProcrastyLogger";
+			sourceTree = "<group>";
+		};
+		5DB58F74B00E1204036D8193C06AC92A /* Pods-ProcrastyLogger_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				43ECDF0A903D4F44FB4CC55ED889A088 /* Info.plist */,
+				00CACFAA3304179331893C79F4FF9A5C /* Pods-ProcrastyLogger_Tests.modulemap */,
+				F3F8384E4D0547E6C1780D68D3F0293C /* Pods-ProcrastyLogger_Tests-acknowledgements.markdown */,
+				29A1C16ED9EEF16DD968089BDE39D18B /* Pods-ProcrastyLogger_Tests-acknowledgements.plist */,
+				78871FC850CF9139D0CCCA31DA30F695 /* Pods-ProcrastyLogger_Tests-dummy.m */,
+				CAE3615F6A0B2AB84D2D6183B063C3E6 /* Pods-ProcrastyLogger_Tests-frameworks.sh */,
+				0185C21799D5FF50B9B4974F2BE3F6FD /* Pods-ProcrastyLogger_Tests-resources.sh */,
+				B03FC4439DDBF4359A24DEF4F46347B0 /* Pods-ProcrastyLogger_Tests-umbrella.h */,
+				99485803B205F3E131B546BB8843ED6F /* Pods-ProcrastyLogger_Tests.debug.xcconfig */,
+				F0BB2A0F9A04BFD83473CF168FF62AC0 /* Pods-ProcrastyLogger_Tests.release.xcconfig */,
+			);
+			name = "Pods-ProcrastyLogger_Tests";
+			path = "Target Support Files/Pods-ProcrastyLogger_Tests";
+			sourceTree = "<group>";
+		};
+		65C98CEA2A87949DECD46370A031ED22 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				267D187697C913F1BF5C91DAA076024A /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		673A6D4DAF19B21FC22ABFF3D2631C11 /* Pods-ProcrastyLogger_Example */ = {
+			isa = PBXGroup;
+			children = (
+				BE50969B34B33C3E81719808B78FCC72 /* Info.plist */,
+				7AD5675140C184DEF45CC5F3E4A1325B /* Pods-ProcrastyLogger_Example.modulemap */,
+				F6141484AB5929A2631DABFF7BF9F8A6 /* Pods-ProcrastyLogger_Example-acknowledgements.markdown */,
+				F86ABEA303AE393E333D6A2667AFB4C4 /* Pods-ProcrastyLogger_Example-acknowledgements.plist */,
+				90501047156F87C93255C93A1A0E51C5 /* Pods-ProcrastyLogger_Example-dummy.m */,
+				A42602AC46B20007CC129578B23224A3 /* Pods-ProcrastyLogger_Example-frameworks.sh */,
+				7F404D00C78A6439BD57F3B99F449888 /* Pods-ProcrastyLogger_Example-resources.sh */,
+				6DD2720FFF480962102572B1ECC09E80 /* Pods-ProcrastyLogger_Example-umbrella.h */,
+				0731481257BE2209238CF70809AE5070 /* Pods-ProcrastyLogger_Example.debug.xcconfig */,
+				7EA1E252A69B7D550637515BD3AA7709 /* Pods-ProcrastyLogger_Example.release.xcconfig */,
+			);
+			name = "Pods-ProcrastyLogger_Example";
+			path = "Target Support Files/Pods-ProcrastyLogger_Example";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				A5B8121B8BBAC64C71ABD68A969F0E7D /* Development Pods */,
+				A8AE2A95F8E20DB27067F8B3E4C94127 /* Frameworks */,
+				F4BAEDD13C80CE3D9B4F8C6687048C9D /* Pods */,
+				FBB1B8F4645D2AA2C88DDBAF8E0C7480 /* Products */,
+				0040585B7512B8AD9E400B3B46EA03FE /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A5B8121B8BBAC64C71ABD68A969F0E7D /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CA028824209D545CA4E4838BD7588450 /* ProcrastyLogger */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		A8AE2A95F8E20DB27067F8B3E4C94127 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB430AEC0EC4B356F6639867D58DD53F /* ZipArchive.framework */,
+				65C98CEA2A87949DECD46370A031ED22 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB63A4D5F7F1026020F64F1843406BC7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF6925F0521F272C596D95A646A4A4B0 /* Info.plist */,
+				70576DADACD2A0BE567E7F51F658A3BA /* ZipArchive.modulemap */,
+				FD63B23A781CDEF79DDBA00F48369C2F /* ZipArchive.xcconfig */,
+				49BAFFBAD9E45BE4A73C11DC4E85DAE7 /* ZipArchive-dummy.m */,
+				0E3026391CBADD9927E9B63C6ED8CE19 /* ZipArchive-prefix.pch */,
+				C0084A7D00C130F5D8FC4D6B06C54F67 /* ZipArchive-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ZipArchive";
+			sourceTree = "<group>";
+		};
+		CA028824209D545CA4E4838BD7588450 /* ProcrastyLogger */ = {
+			isa = PBXGroup;
+			children = (
+				F2B6F7DEABFA150BFABAF9CECEB4470D /* PLog */,
+				3B5390DE660B58C8C1974976E5E95612 /* Support Files */,
+			);
+			name = ProcrastyLogger;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		F2B6F7DEABFA150BFABAF9CECEB4470D /* PLog */ = {
+			isa = PBXGroup;
+			children = (
+				6C6971C744CDA32B3C353FA2888043B3 /* plog.h */,
+				5DF469D77495E9D7FAC7117DF87D450F /* plog.m */,
+				2B8B3E51DF24621093F6D9646A0C2189 /* PLogger.h */,
+				585B31362DA99859B7A03BAB7C09506D /* PLogger.m */,
+				00DB119CBC48C32A7CB92A974A7AE036 /* PLoggerAppender.h */,
+				B6E10A2FAE2CB1EFAB3B25817B2ED72F /* PLoggerConfigurator.h */,
+				B25AA6EE8DF586FC5D8274D1624AD5FE /* PLoggerConfigurator.m */,
+				6F2B5BD2DEB0C087378B25A779115034 /* PLoggerDefaultAppender.h */,
+				C0DFC57B042AA6C15F88C0B4F3649557 /* PLoggerDefaultAppender.m */,
+				78DD5BB2D4FE581ED0276899E4F4BDDB /* PLoggerDefaultFormatter.h */,
+				65881781532946B381BA27B052381F36 /* PLoggerDefaultFormatter.m */,
+				81476797A520A931FAA1D041AEBF3CDE /* PLoggerFormatter.h */,
+				004B96C47363445C42B5D3DEBA427935 /* PLoggerLine.h */,
+				F17CC5241EE1341D1B708D6DED2AFDF8 /* PLoggerLine.m */,
+				0B8F9C10199CB6029A6CB6A55A387DB7 /* PLoggerRollingFileAppender.h */,
+				BA69C0A69C5F17389ACBE96BFAC0E9D0 /* PLoggerRollingFileAppender.m */,
+				5AA2C0D8894693BAEACCD37BC3C9886E /* PLoggerStore.h */,
+				681980B98E5CE902BBFBA3D0129805E1 /* PLoggerStore.m */,
+				7F76D94085B83C8AE6ABAB30EB8ED5CF /* PLoggerZipHandler.h */,
+				A38C9DF58BA63C44DF70DF038CAA24BE /* PLoggerZipHandler.m */,
+			);
+			path = PLog;
+			sourceTree = "<group>";
+		};
+		F4BAEDD13C80CE3D9B4F8C6687048C9D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F84D50F521486A091DF81E09314C6664 /* ZipArchive */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F84D50F521486A091DF81E09314C6664 /* ZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				932473E2CEA2F1135CC5ED0A94732958 /* crypt.h */,
+				23F7C6DDF6256EEC1CCD3AC4819D760A /* ioapi.c */,
+				9D0AD4E4DB5564D008D671C67579104A /* ioapi.h */,
+				32BF10FB71DDEECEA4F5C559C3AF140F /* mztools.c */,
+				3D5FD78A91D7981E85EF8E2E703E96D3 /* mztools.h */,
+				D6A1E5DDA0FFD72E005769B0054A4807 /* unzip.c */,
+				84F6945951936DAA3B0E81E0F49CE9BC /* unzip.h */,
+				EE682BC20C5A77EE24563C1D707E0B92 /* zip.c */,
+				80F8D23231FD652E9BCCE3A3A31BC088 /* zip.h */,
+				DE5C5D63550EE833580D693810B80768 /* ZipArchive.h */,
+				8927EC890454FC91F0AA54C81874C7B5 /* ZipArchive.m */,
+				BB63A4D5F7F1026020F64F1843406BC7 /* Support Files */,
+			);
+			path = ZipArchive;
+			sourceTree = "<group>";
+		};
+		FBB1B8F4645D2AA2C88DDBAF8E0C7480 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1D45CA2BDC7C01CB4F8AD8F98116F4E /* Pods_ProcrastyLogger_Example.framework */,
+				1FC479059BC86D7162625CE95BC7D4D7 /* Pods_ProcrastyLogger_Tests.framework */,
+				8D3F8BD97468C86D97F27BBF4A76C8BA /* ProcrastyLogger.bundle */,
+				0C27E9749F2C72F65E204274772A6B84 /* ProcrastyLogger.framework */,
+				35F7CDE651FBF3A1992D0A3AC9DF5D84 /* ZipArchive.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1DF0F2860E09E4F6DD34CB7A7E1B377F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				871FA9785FEAD4843D8D6147BD3ADC59 /* plog.h in Headers */,
+				AADC46CFFD9BFA94F0D8A8D133399D6C /* PLogger.h in Headers */,
+				FAB6C16A9D5DCFE91A9E19C98C6F19E1 /* PLoggerAppender.h in Headers */,
+				53152174B184895BF3362C909868C923 /* PLoggerConfigurator.h in Headers */,
+				796C97F5400C35CCC79F19109347253E /* PLoggerDefaultAppender.h in Headers */,
+				A865ED6145760C2802528A31CCB61113 /* PLoggerDefaultFormatter.h in Headers */,
+				555009DC710FE4E12C2605D8772D2406 /* PLoggerFormatter.h in Headers */,
+				86D9322A23F48BFF606C97672E042A3D /* PLoggerLine.h in Headers */,
+				5DD32DF064247A1C26B97EA57DB66D4E /* PLoggerRollingFileAppender.h in Headers */,
+				33C7A08D2F80D294DB0CB6623B249949 /* PLoggerStore.h in Headers */,
+				FB56A0D2B34CE7B4E0ED17691E1FF615 /* PLoggerZipHandler.h in Headers */,
+				F99161D835A104187185E189B384FFB8 /* ProcrastyLogger-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6729BB75810B5BF27B6F09BC59931126 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD2EDE5EB483D08B3B86BA62A9643B11 /* crypt.h in Headers */,
+				3683425AB10D72F55E502364796E9060 /* ioapi.h in Headers */,
+				9E6B6A7410F779DBA2708A8CD6DD8139 /* mztools.h in Headers */,
+				A37CCD6DCD7CDA465C32EABA3BEA47CA /* unzip.h in Headers */,
+				FF3B41C85EC0D060D63D087BE652376D /* zip.h in Headers */,
+				92917F8CD3B51CE5044BFBD8484B0F58 /* ZipArchive-umbrella.h in Headers */,
+				1DD51300B5F96B422A297F0C2EA76B66 /* ZipArchive.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5B88D4C5467EC1691FC6EA9FD2F9348 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDA96530D32B76FBA18927413429F79A /* Pods-ProcrastyLogger_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF4196E3248B18AFD361AB15C6583AF1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9520C45994E5D1C3D5DCDA72CA044AEE /* Pods-ProcrastyLogger_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		208A731FE608CC1FD763E31C977264FF /* ZipArchive */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3165A092D682C4DECDDACE1756F1F166 /* Build configuration list for PBXNativeTarget "ZipArchive" */;
+			buildPhases = (
+				87B7D04451FD899E31D8F05CD1D589A5 /* Sources */,
+				5FF58DE426B5B1EEC28B41163D8D567F /* Frameworks */,
+				6729BB75810B5BF27B6F09BC59931126 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZipArchive;
+			productName = ZipArchive;
+			productReference = 35F7CDE651FBF3A1992D0A3AC9DF5D84 /* ZipArchive.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4DF911F1FDFECB63699455014AA799FF /* ProcrastyLogger-ProcrastyLogger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6E5E12E636E4315989551A765E83186 /* Build configuration list for PBXNativeTarget "ProcrastyLogger-ProcrastyLogger" */;
+			buildPhases = (
+				0BFCF702C7F8A63A21FDF81FAD822C3F /* Sources */,
+				526B22DEA536F98F0827253103704794 /* Frameworks */,
+				559AFA3AE06BFC3E454B61BF1678E7E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ProcrastyLogger-ProcrastyLogger";
+			productName = "ProcrastyLogger-ProcrastyLogger";
+			productReference = 8D3F8BD97468C86D97F27BBF4A76C8BA /* ProcrastyLogger.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		6931B249D99927CF9E274912640D86D2 /* Pods-ProcrastyLogger_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70234C5DB49A25B3CC36ED2489DE1FF7 /* Build configuration list for PBXNativeTarget "Pods-ProcrastyLogger_Tests" */;
+			buildPhases = (
+				721A978C9ACAA1C16E9C2BC099AE8B19 /* Sources */,
+				03009844DB636E4E1CDEBF6A972C5009 /* Frameworks */,
+				CF4196E3248B18AFD361AB15C6583AF1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24634512A34805949AC3300D21BC32FA /* PBXTargetDependency */,
+				EFAB6FCCF9AF39EAE8E178803C2C1E46 /* PBXTargetDependency */,
+			);
+			name = "Pods-ProcrastyLogger_Tests";
+			productName = "Pods-ProcrastyLogger_Tests";
+			productReference = 1FC479059BC86D7162625CE95BC7D4D7 /* Pods_ProcrastyLogger_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9E9E3704BC6F2FA35B19C6B2027CC35C /* Pods-ProcrastyLogger_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D6FDF4EED328C1F8C3931F93A6BCF49 /* Build configuration list for PBXNativeTarget "Pods-ProcrastyLogger_Example" */;
+			buildPhases = (
+				DEDC913705C02709E51BE163C7F1270D /* Sources */,
+				6DF2A895298B7B764BC082601C50A826 /* Frameworks */,
+				A5B88D4C5467EC1691FC6EA9FD2F9348 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E0F190CA176568593755749CD8792093 /* PBXTargetDependency */,
+				54814AC95A64E9E508191E3BF5A7313C /* PBXTargetDependency */,
+			);
+			name = "Pods-ProcrastyLogger_Example";
+			productName = "Pods-ProcrastyLogger_Example";
+			productReference = E1D45CA2BDC7C01CB4F8AD8F98116F4E /* Pods_ProcrastyLogger_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D7F14030A209CD15F4153DAAF2B131D9 /* ProcrastyLogger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3A631E3361105875C9C85080C8A800B /* Build configuration list for PBXNativeTarget "ProcrastyLogger" */;
+			buildPhases = (
+				CDC41EFBD1C4F543F67126829FAA2CA6 /* Sources */,
+				524750F2C671FAB02FB371F5C211E00E /* Frameworks */,
+				5EE7B752609BB07F60E9C6FF222D3928 /* Resources */,
+				1DF0F2860E09E4F6DD34CB7A7E1B377F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B11A923942EA155D947E87F273001E4 /* PBXTargetDependency */,
+				7F4384C0D06E29AEC3B49E02182D6F26 /* PBXTargetDependency */,
+			);
+			name = ProcrastyLogger;
+			productName = ProcrastyLogger;
+			productReference = 0C27E9749F2C72F65E204274772A6B84 /* ProcrastyLogger.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = FBB1B8F4645D2AA2C88DDBAF8E0C7480 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9E9E3704BC6F2FA35B19C6B2027CC35C /* Pods-ProcrastyLogger_Example */,
+				6931B249D99927CF9E274912640D86D2 /* Pods-ProcrastyLogger_Tests */,
+				D7F14030A209CD15F4153DAAF2B131D9 /* ProcrastyLogger */,
+				4DF911F1FDFECB63699455014AA799FF /* ProcrastyLogger-ProcrastyLogger */,
+				208A731FE608CC1FD763E31C977264FF /* ZipArchive */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		559AFA3AE06BFC3E454B61BF1678E7E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EE7B752609BB07F60E9C6FF222D3928 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8607C86A8E4E025BA50EBD1C2B719BBF /* ProcrastyLogger.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0BFCF702C7F8A63A21FDF81FAD822C3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		721A978C9ACAA1C16E9C2BC099AE8B19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91B643882FA988B4921047AFE9D41E58 /* Pods-ProcrastyLogger_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87B7D04451FD899E31D8F05CD1D589A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D35D77A9E073FC3B18ECA50CC7B265D /* ioapi.c in Sources */,
+				9FDE6367D053397CE08E91FD2D10957A /* mztools.c in Sources */,
+				57CF45271059E8EB26239D304E99DBDD /* unzip.c in Sources */,
+				CC0B556D7E8E2DBD3BD6421CAE1AA322 /* zip.c in Sources */,
+				1F2CEB30BF4568ABE985A991AA9F8D69 /* ZipArchive-dummy.m in Sources */,
+				98411C7C6831F78898CC891AAEB040CE /* ZipArchive.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDC41EFBD1C4F543F67126829FAA2CA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				822E3127CBD192B60E7C698ADD434648 /* plog.m in Sources */,
+				E1F5A8C744BC526F573CCE61B7C7D06F /* PLogger.m in Sources */,
+				CFE63FF3E7940BA8F6DDF28C58D4A1FE /* PLoggerConfigurator.m in Sources */,
+				52C87DE5D0B78FD9D7ACFC3782F76162 /* PLoggerDefaultAppender.m in Sources */,
+				A737FEE96E3FA230EC59C19D18E3A129 /* PLoggerDefaultFormatter.m in Sources */,
+				66A859ACC29A4F21787E7E55F4839861 /* PLoggerLine.m in Sources */,
+				09E9C2A8C4AA21DE6D20A959F86E3B2F /* PLoggerRollingFileAppender.m in Sources */,
+				FFE4E0C332D4409EF25ABDDC43B0BC94 /* PLoggerStore.m in Sources */,
+				8CF95A9A9D31CF0C2A9134A8407FDE14 /* PLoggerZipHandler.m in Sources */,
+				BE7A4561FB211AE77AC9D5DCC388E1B3 /* ProcrastyLogger-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEDC913705C02709E51BE163C7F1270D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				967AB85241A24488818AEE3475748F8E /* Pods-ProcrastyLogger_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24634512A34805949AC3300D21BC32FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ProcrastyLogger;
+			target = D7F14030A209CD15F4153DAAF2B131D9 /* ProcrastyLogger */;
+			targetProxy = 147544180CB8CAAF1E5CAC7090CFD94E /* PBXContainerItemProxy */;
+		};
+		54814AC95A64E9E508191E3BF5A7313C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ZipArchive;
+			target = 208A731FE608CC1FD763E31C977264FF /* ZipArchive */;
+			targetProxy = F13F2B6A6F31238AD1463060EA32CD8B /* PBXContainerItemProxy */;
+		};
+		5B11A923942EA155D947E87F273001E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ProcrastyLogger-ProcrastyLogger";
+			target = 4DF911F1FDFECB63699455014AA799FF /* ProcrastyLogger-ProcrastyLogger */;
+			targetProxy = 717D16A36F6E2646254528E058251353 /* PBXContainerItemProxy */;
+		};
+		7F4384C0D06E29AEC3B49E02182D6F26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ZipArchive;
+			target = 208A731FE608CC1FD763E31C977264FF /* ZipArchive */;
+			targetProxy = 08940E099AF3C0767E750434D67EC33F /* PBXContainerItemProxy */;
+		};
+		E0F190CA176568593755749CD8792093 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ProcrastyLogger;
+			target = D7F14030A209CD15F4153DAAF2B131D9 /* ProcrastyLogger */;
+			targetProxy = FBC8200A52FEA505265734217EBFDE85 /* PBXContainerItemProxy */;
+		};
+		EFAB6FCCF9AF39EAE8E178803C2C1E46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ZipArchive;
+			target = 208A731FE608CC1FD763E31C977264FF /* ZipArchive */;
+			targetProxy = 3CC677B161E35F2E3CC8D76B441D289A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		03CA91998D6773EC5D02B3DB87B8353E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		0BB3AB249D797F6AD64FB2386E462929 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99485803B205F3E131B546BB8843ED6F /* Pods-ProcrastyLogger_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ProcrastyLogger_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ProcrastyLogger_Tests/Pods-ProcrastyLogger_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_ProcrastyLogger_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1CD2623349ACAE58C4677AAA5287C1B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EA1E252A69B7D550637515BD3AA7709 /* Pods-ProcrastyLogger_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ProcrastyLogger_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ProcrastyLogger_Example/Pods-ProcrastyLogger_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_ProcrastyLogger_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3E7B77F0AA78B592749171B489F673E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 292560D0D3B8FD7C23617DF1ED0A306F /* ProcrastyLogger.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = ProcrastyLogger;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		423EAB94A5F9282C5BF39BF9E2BA76E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 292560D0D3B8FD7C23617DF1ED0A306F /* ProcrastyLogger.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ProcrastyLogger/ProcrastyLogger-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ProcrastyLogger/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ProcrastyLogger/ProcrastyLogger.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ProcrastyLogger;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5F41E3F385E8F51849EC5BD64957F0A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 292560D0D3B8FD7C23617DF1ED0A306F /* ProcrastyLogger.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ProcrastyLogger/ProcrastyLogger-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ProcrastyLogger/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ProcrastyLogger/ProcrastyLogger.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ProcrastyLogger;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6FF8F6910BF5F9723A6E7C3631BFDE1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0731481257BE2209238CF70809AE5070 /* Pods-ProcrastyLogger_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ProcrastyLogger_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ProcrastyLogger_Example/Pods-ProcrastyLogger_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_ProcrastyLogger_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8B08BF0964FE63BE18E8C19ADD9BC312 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0BB2A0F9A04BFD83473CF168FF62AC0 /* Pods-ProcrastyLogger_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ProcrastyLogger_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ProcrastyLogger_Tests/Pods-ProcrastyLogger_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_ProcrastyLogger_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A9D270C8430F07F67E02B23208E012BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 292560D0D3B8FD7C23617DF1ED0A306F /* ProcrastyLogger.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = ProcrastyLogger;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		D10C10FE69E7813E65809C713DFF41E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD63B23A781CDEF79DDBA00F48369C2F /* ZipArchive.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ZipArchive/ZipArchive-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZipArchive/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZipArchive/ZipArchive.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ZipArchive;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DECC6AB42D2B36D193759C52AFC047C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD63B23A781CDEF79DDBA00F48369C2F /* ZipArchive.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ZipArchive/ZipArchive-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZipArchive/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZipArchive/ZipArchive.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ZipArchive;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */,
+				03CA91998D6773EC5D02B3DB87B8353E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3165A092D682C4DECDDACE1756F1F166 /* Build configuration list for PBXNativeTarget "ZipArchive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DECC6AB42D2B36D193759C52AFC047C4 /* Debug */,
+				D10C10FE69E7813E65809C713DFF41E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D6FDF4EED328C1F8C3931F93A6BCF49 /* Build configuration list for PBXNativeTarget "Pods-ProcrastyLogger_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FF8F6910BF5F9723A6E7C3631BFDE1B /* Debug */,
+				1CD2623349ACAE58C4677AAA5287C1B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70234C5DB49A25B3CC36ED2489DE1FF7 /* Build configuration list for PBXNativeTarget "Pods-ProcrastyLogger_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BB3AB249D797F6AD64FB2386E462929 /* Debug */,
+				8B08BF0964FE63BE18E8C19ADD9BC312 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6E5E12E636E4315989551A765E83186 /* Build configuration list for PBXNativeTarget "ProcrastyLogger-ProcrastyLogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9D270C8430F07F67E02B23208E012BB /* Debug */,
+				3E7B77F0AA78B592749171B489F673E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3A631E3361105875C9C85080C8A800B /* Build configuration list for PBXNativeTarget "ProcrastyLogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F41E3F385E8F51849EC5BD64957F0A3 /* Debug */,
+				423EAB94A5F9282C5BF39BF9E2BA76E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
