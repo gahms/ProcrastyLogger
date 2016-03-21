@@ -1,0 +1,10 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'ProcrastyLogger_Example', :exclusive => true do
+  pod 'ProcrastyLogger', :path => '../'
+end
+
+target 'ProcrastyLogger_Tests', :exclusive => true do
+  pod 'ProcrastyLogger', :path => '../'  
+end
